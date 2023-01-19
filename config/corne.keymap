@@ -12,11 +12,6 @@
         keymap {
                 compatible = "zmk,keymap,conditional-layers";
 
-                tri_layer {
-                        if-layers = <1 2>;
-                        then-layer = <3>;
-                };
-
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -64,7 +59,8 @@
 // | SHFT |     |VOLDN| PLAY|VOLUP|     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | OFF  |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
+                        if-layers = <1 2>;
+                        then-layer = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &trans     &trans       &kp C_VOL_DN &kp C_PP     &kp C_VOL_UP &trans         &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &trans     &trans       &trans       &trans       &trans       &trans         &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
