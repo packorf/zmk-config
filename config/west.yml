@@ -4,7 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: packorf
       url-base: https://github.com/packorf
-    - name: 
   projects:
     - name: zmk
       remote: packorf
