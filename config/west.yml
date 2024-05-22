@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/packorf
   projects:
     - name: zmk
-      remote: packorf
-      revision: soft-off
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
